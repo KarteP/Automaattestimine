@@ -43,7 +43,7 @@ public class CurrentWeatherTests {
     @Test
     public void testCityNameInRightFormat() {
         try {
-            WeatherRequest request = new WeatherRequest("Tallinn", 1.0);
+            WeatherRequest request = new WeatherRequest("Tallinn", 1.00);
             assertEquals(request.getCity(), "Tallinn");
             assertTrue(request.getCity() instanceof String);
         } catch (Exception e) {

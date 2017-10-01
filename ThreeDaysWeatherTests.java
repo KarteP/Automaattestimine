@@ -12,7 +12,7 @@ public class ThreeDaysWeatherTests {
     @Test
     public void testIfWeatherForecastForThreeDaysIsGiven() {
         try {
-            WeatherRequest request = new WeatherRequest("Tallinn", 1.0);
+            WeatherRequest request = new WeatherRequest("Tallinn", 1.00);
             ThreeDaysWeather threeDaysWeather = new ThreeDaysWeather(request);
             assertEquals(3, threeDaysWeather.threeDaysMap.size());
         } catch (Exception e) {
